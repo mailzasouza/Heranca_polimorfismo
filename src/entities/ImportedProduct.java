@@ -7,9 +7,11 @@ public class ImportedProduct extends Product {
 	public ImportedProduct() {
 		
 	}
+	
 
-	public ImportedProduct(double customsFee) {
-			this.customsFee = customsFee;
+	public ImportedProduct(String name, double price, double customsFee) {
+		super(name, price);
+		this.customsFee = customsFee;
 	}
 
 	public double getCustomsFee() {
