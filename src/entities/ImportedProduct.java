@@ -5,7 +5,7 @@ public class ImportedProduct extends Product {
 	private double customsFee;
 	
 	public ImportedProduct() {
-		
+		super();
 	}
 	
 

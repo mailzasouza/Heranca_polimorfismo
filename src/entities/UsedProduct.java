@@ -7,7 +7,7 @@ public class UsedProduct extends Product{
 	Date manufactureDate;
 	
 	private UsedProduct() {
-			
+		super();	
 	}
 	
 	public UsedProduct(String name, double price, Date manufactureDate) {
