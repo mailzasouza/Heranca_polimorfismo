@@ -37,12 +37,14 @@ public class Program {
 				if (ch == 'u') {
 					System.out.println("Manufacture date (DD/MM/YYYY): ");
 					
-
 				}
 			}
 
 		}
 
+		System.out.println("PRICE TAGS:");
+		System.out.println();
+		
 		sc.close();
 	}
 
