@@ -40,7 +40,7 @@ public class Program {
 				list.add(new ImportedProduct(name, price, customsFee));
 			}
 			else if (ch == 'u') {
-					System.out.println("Manufacture date (DD/MM/YYYY): ");
+					System.out.print("Manufacture date (DD/MM/YYYY): ");
 					Date date = sdf.parse(sc.next());
 					list.add(new UsedProduct(name, price, date));
 			}
@@ -51,7 +51,9 @@ public class Program {
 		}
 
 		System.out.println("PRICE TAGS:");
-		
+		for (Product prod : list) {
+			System.out.println(prod.priceTag());
+		}
 		
 		sc.close();
 	}

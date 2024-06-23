@@ -23,5 +23,8 @@ public class UsedProduct extends Product{
 		this.manufactureDate = manufactureDate;
 	}
 	
-
+	@Override
+	public String priceTag() {
+		return name + price +  manufactureDate;
+	}
 }
