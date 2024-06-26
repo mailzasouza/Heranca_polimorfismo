@@ -2,6 +2,8 @@ package aplication;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -41,12 +43,12 @@ public class Program {
 			}
 			else if (ch == 'u') {
 					System.out.print("Manufacture date (DD/MM/YYYY): ");
-					Date date = sdf.parse(sc.next());
+					LocalDate date = LocalDate.parse(sc.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 					list.add(new UsedProduct(name, price, date));
 			}
-		//	else {
-		//		list.add(new Product(name, price));
-		//	}
+			else {
+				list.add(new Product(name, price));
+			}
 
 		}
 
