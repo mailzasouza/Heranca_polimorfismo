@@ -44,15 +44,16 @@ public class Program {
 					Date date = sdf.parse(sc.next());
 					list.add(new UsedProduct(name, price, date));
 			}
-			else {
-				list.add(new Product(name, price));
-			}
+		//	else {
+		//		list.add(new Product(name, price));
+		//	}
 
 		}
 
 		System.out.println("PRICE TAGS:");
 		for (Product prod : list) {
 			System.out.println(prod.priceTag());
+						
 		}
 		
 		sc.close();
